@@ -3,13 +3,15 @@ import * as path from "path";
 import merge = require("webpack-merge");
 import validate = require("webpack-validator");
 import failPlugin = require("webpack-fail-plugin");
+import HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const common: Webpack.Configuration & any = {
     entry: [
         path.join(__dirname, "src", "app")
     ],
     output: {
-        filename: path.join(__dirname, "bin", "[name].js")
+        path: path.join(__dirname, "public"),
+        filename: "[name].js"
     },
     module: {
         loaders: [
@@ -21,7 +23,8 @@ const common: Webpack.Configuration & any = {
         extensions: ["", ".webpack.js", ".ts", ".tsx", ".js", ".jsx"]
     },
     plugins: [
-        failPlugin
+        failPlugin,
+        new HtmlWebpackPlugin()
     ]
 };
 
