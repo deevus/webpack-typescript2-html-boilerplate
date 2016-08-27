@@ -18,7 +18,8 @@
         ],
         "moduleResolution": "node",
         "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
+        "jsx": "preserve"
     },
     "exclude": [
         "node_modules"

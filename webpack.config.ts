@@ -15,8 +15,8 @@ const common: Webpack.Configuration & any = {
     },
     module: {
         loaders: [
-            {test: /\.tsx?$/, loader: "ts-loader"},
-            {test: /\.jsx?$/, loader: "babel-loader", exclude: "node_modules"},
+            {test: /\.tsx?$/, loaders: ["babel", "ts"]},
+            {test: /\.jsx?$/, loaders: ["babel"], exclude: "node_modules"},
         ]
     },
     resolve: {
