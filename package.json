@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "typings prune && typings install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && webpack --config webpack.config.js",
     "serve": "static -a localhost public/",
@@ -25,6 +26,7 @@
     "ts-loader": "^0.x.x",
     "tslint": "^3.x.x",
     "typescript": "^2.x.x",
+    "typings": "1.3.3",
     "webpack": "^1.x.x",
     "webpack-fail-plugin": "^1.x.x",
     "webpack-merge": "^0.x.x",

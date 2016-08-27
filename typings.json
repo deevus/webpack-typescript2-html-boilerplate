@@ -1,0 +1,8 @@
+{
+  "globalDependencies": {
+    "html-webpack-plugin": "registry:dt/html-webpack-plugin#2.22.2+20160802151720",
+    "webpack-fail-plugin": "registry:dt/webpack-fail-plugin#1.0.5+20160802151614",
+    "webpack-merge": "registry:dt/webpack-merge#0.0.0+20160802151635",
+    "webpack-validator": "registry:dt/webpack-validator#2.2.6+20160802151705"
+  }
+}
